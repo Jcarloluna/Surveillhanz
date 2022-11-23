@@ -1,0 +1,106 @@
+.container {
+  height: 1080px;
+  display: flex;
+  background-image: url("/images/BackgroundImage.png");
+  display:block;
+}
+
+.containerText{
+  align-items: center;
+  justify-content: flex-start;
+  display: flex;
+  padding:45px 90px;
+  width: 100%;
+
+}
+
+.containerText > h1 {
+  font-weight: 600;
+  font-size: 65px;
+  line-height: 74px;
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
+  width: 607px;
+  height: 110px;
+  margin: 0px;
+}
+
+/* Table Styling */
+
+.containerTable{
+  display:flex;
+  justify-content: center;
+  align-items: start;
+  width:100%;
+  height: auto;
+}
+
+.Table {
+	border: 2px ridge;
+  border-color:#e6e6e6 ;
+	box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  width: 80%;
+  background-color: #1c1c1c;
+  border-radius: 10px;  
+}
+
+/* Table Head */
+
+.Table>thead{
+  color:#010101;
+  display:table-header-group;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #e1e1e1;
+  
+}
+
+.Table>thead>th{
+  font-weight: 600;
+  padding:10px;
+}
+  
+.Table>tbody>tr>{
+  display: table-row;
+	color: #fff;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+/* Table Cells */
+.Table>tbody>tr> td {
+  display:table-cell;
+	color: #fff;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding:8px;
+}
+
+.Table> tbody tr:nth-of-type(even) {
+  background-color: #242424;
+}
+
+/* Table Action Styling */
+.TableAction{
+  font-weight: 550;
+  cursor: pointer;
+  background-color: rgba(1, 1, 1, 0);
+  color:#e6e6e6;
+  border-color: #e6e6e6;
+  border-radius:10px;
+  padding:10px;
+}
+
+.TableAction:hover{
+  background-color: #e6e6e6;
+  color:#010101;
+  transition:0.3s;
+}
+
+.TableAction:active{
+  transform: scale(0.98);
+}
