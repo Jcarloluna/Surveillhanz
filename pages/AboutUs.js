@@ -1,3 +1,4 @@
+import AboutUsImage from "../components/AboutUs/AboutUsImage";
 import AboutUsText from "../components/AboutUs/AboutUsText"
 import Footer from "../components/Footer";
 import NavbarAbout from "../components/NavbarAbout";
@@ -8,6 +9,7 @@ function AboutUs() {
     <div>
       <NavbarAbout/>
       <AboutUsText />
+      <AboutUsImage/>
       <Footer/>
     </div>
   );

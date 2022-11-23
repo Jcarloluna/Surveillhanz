@@ -1,8 +1,9 @@
 .container {
-  height: 623px;
+  height: 423px;
   display: flex;
   background-image: url("/images/BackgroundImage.png");
   justify-content:space-evenly;
+  align-items: center;
 }
 
 .containerTitle{
@@ -10,6 +11,7 @@
   align-items: center;
   display: flex;
   margin-bottom:50px;
+  width:40%;
 
 }
 
@@ -17,6 +19,7 @@
   justify-content: center;
   align-items: center;
   display: flex;
+  width: 40%;
 }
 
 .containerTitle > h1 {
@@ -30,7 +33,15 @@
   width: 607px;
   height: 110px;
   margin: 0px;
-  
-  
+}
+
+.containerDefinition > p{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 133%;
+  /* or 40px */
+  text-align: start;
+  color: #E6E6E6;
 }
 

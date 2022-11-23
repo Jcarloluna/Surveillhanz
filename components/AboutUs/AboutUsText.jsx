@@ -7,7 +7,11 @@ const AboutUsText = () => {
         <h1>About Us</h1>
       </div>
       <div className={styles.containerDefinition}>
-        <img src="/images/DogCatImage.png" alt="Sample Image Object Recognition" />
+        <p>
+          We are 4th Year Students from Technological University of the Philippines - 
+          Cavite. Currently taking up Embedded System subject, this website is part of 
+          our journey towards building a ReactJS Application.
+          </p>
       </div>
     </div>
   );

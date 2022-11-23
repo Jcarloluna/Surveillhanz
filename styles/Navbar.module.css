@@ -13,7 +13,7 @@
 .Title{
   margin-left:80px;
   display:flex;
-  justify-content: start;
+  justify-content: flex-start;
   align-items: center;
   color: #e6e6e6;
   gap: 36px;
