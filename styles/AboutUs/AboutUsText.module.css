@@ -1,0 +1,36 @@
+.container {
+  height: 623px;
+  display: flex;
+  background-image: url("/images/BackgroundImage.png");
+  justify-content:space-evenly;
+}
+
+.containerTitle{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-bottom:50px;
+
+}
+
+.containerDefinition{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.containerTitle > h1 {
+  font-weight: 700;
+  font-size: 65px;
+  line-height: 74px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFFFFF;
+  width: 607px;
+  height: 110px;
+  margin: 0px;
+  
+  
+}
+
