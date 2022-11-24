@@ -57,7 +57,7 @@
   
 }
 
-.Table>thead>th{
+.Table>thead>tr>th{
   font-weight: 600;
   padding:10px;
 }

@@ -9,18 +9,20 @@ const DashboardContent = () => {
       <div className={styles.containerTable}>
         <table className={styles.Table}>
           <thead>
-            <th>
-              No.
-            </th>
-            <th>
-              Image
-            </th>
-            <th>
-              DateTime
-            </th>
-            <th>
-              Action
-            </th>
+            <tr>
+              <th>
+                No.
+              </th>
+              <th>
+                Image
+              </th>
+              <th>
+                DateTime
+              </th>
+              <th>
+                Action
+              </th>
+            </tr>
           </thead>
           <tbody>
             <tr>
