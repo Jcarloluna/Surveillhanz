@@ -25,7 +25,7 @@
   font-size: 65px;
   line-height: 74px;
   display: flex;
-  align-items: start;
+  align-items: flex-start;
   color: #FFFFFF;
   width: 607px;
   height: 110px;
@@ -38,7 +38,7 @@
   font-weight: 200;
   font-size: 51px;
   line-height: 58px;
-  align-items: start;
+  align-items: flex-start;
 
   display: flex;
   color: #FFFFFF;

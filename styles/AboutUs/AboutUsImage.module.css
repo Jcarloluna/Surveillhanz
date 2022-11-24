@@ -17,8 +17,8 @@
 
 .teamNameContainer{
     display: flex;
-    justify-content: start;
-    align-items: end;
+    justify-content: flex-start;
+    align-items: flex-end;
     width: 100%;
     height: auto;
 
@@ -26,8 +26,8 @@
 
 .teamName{
     display: flex;
-    justify-content: start;
-    align-items: end;
+    justify-content: flex-start;
+    align-items: flex-end;
     width: 100%;
     height: auto;
     margin-left:16.75%;
@@ -38,8 +38,8 @@
     font-size: 150%;
     line-height: 50px;
     display: flex;
-    justify-content: start;
-    align-items: start;
+    justify-content: flex-start;
+    align-items: flex-start;
     text-align: start;
     color: #e6e6e6;
     padding:0px 20px;
