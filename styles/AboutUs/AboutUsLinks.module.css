@@ -214,12 +214,12 @@ a:hover .LinkLogoColored{
 
 .fbLink:hover{
   box-shadow: inset 300px 0 0 0 #295ae1;
-  transition: 0.3s ease-in;
+  transition: 0.4s ease-in;
 }
 
 .gmLink:hover{
   box-shadow: inset 300px 0 0 0 #e71111;
-  transition: 0.3s ease-in;
+  transition: 0.4s ease-in;
 }
 
 
