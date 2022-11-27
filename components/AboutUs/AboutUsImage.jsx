@@ -1,8 +1,10 @@
 import styles from "/styles/AboutUs/AboutUsImage.module.css";
+import {useInView} from 'react-intersection-observer';
 
 const AboutUsImage = () => {
+  const { ref: containerRef, inView: containerVisible} = useInView();
   return (
-    <div className={styles.container}>
+    <div ref={containerRef} className={`${styles.container} ${containerVisible ? styles.animateContainer : ''}` }>
         <div className={styles.teamNameContainer}>
             <div className={styles.teamName}>
                 <h1> TEAM CPETS: 100.0% </h1>

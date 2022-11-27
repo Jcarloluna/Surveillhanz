@@ -1,8 +1,9 @@
 .container {
   height: 1080px;
-  display: flex;
   background-image: url("/images/BackgroundImage.png");
   display:block;
+  align-items: center;
+  padding-top: 75px;
 }
 
 .containerText{

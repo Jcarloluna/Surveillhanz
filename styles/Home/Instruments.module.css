@@ -1,7 +1,7 @@
 .container {
   display: flex;
   align-items: center;
-  height: 623px;
+  height: 850px;
   background-image: url("/images/BackgroundImage.png");
   padding: 110px 70px 110px 70px
 
@@ -15,6 +15,26 @@
   background: #E6E6E6;
   border-radius: 75px;
   padding:50px;
+  opacity:0;
+}
+
+.animateShape{
+  animation-duration:1s;
+  animation-name: animate-shape;
+  animation-fill-mode: forwards;
+}
+
+@keyframes animate-shape {
+  0%{
+    transform: scale(0.3); opacity:0.3;
+  }
+  50%{
+    transform:scale3d(0.6); opacity:0.6;
+  }
+  100%{
+    transform: scale3d(1); opacity:1;
+  }
+  
 }
 
 .firstRow{
@@ -22,6 +42,7 @@
   justify-content: center;
   align-items: center;
   gap:45px;
+  opacity:0;
 }
 
 .secondRow{
@@ -29,11 +50,32 @@
   justify-content: center;
   align-items: center;
   gap:45px;
+  opacity: 0;
+}
+
+.animateImages{
+  animation-duration:2s;
+  animation-name: animate-images;
+  animation-fill-mode: forwards;
+}
+
+@keyframes animate-images {
+  0%{
+    transform: rotateX(0.3); opacity:0.3;
+  }
+  50%{
+    transform: rotateX(5.142rad); opacity:0.6;
+  }
+  100%{
+    transform: rotateX(0);; opacity:1;
+  }
+  
 }
 
 
 .Title{
   width: 500px;
+  opacity: 0;
 }
 
 .Title > h1 {
@@ -46,5 +88,21 @@
   align-items: center;
   color: #D9D9D9;
   margin-left:86px;
+  
+}
+
+.animateTitle{
+  animation-duration:1s;
+  animation-name: animate-title;
+  animation-fill-mode: forwards;
+}
+
+@keyframes animate-title {
+  0%{
+    transform: translate3d(500px,0,0); opacity:0.25;
+  }
+  100%{
+    transform:  translate3d(0,0,0); opacity:1;
+  }
   
 }

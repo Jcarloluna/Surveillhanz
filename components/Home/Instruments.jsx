@@ -1,10 +1,16 @@
 import styles from "/styles/Home/Instruments.module.css";
+import {useInView} from 'react-intersection-observer';
 
 const Instruments = () => {
+  const { ref: imagesRef, inView: imagesVisible} = useInView();
+  console.log('are images visible?:',imagesRef)
+  const { ref: shapeRef, inView: shapeVisible} = useInView();
+  const { ref: titleRef, inView: titleVisible} = useInView();
+
   return (
     <div className={styles.container}>
-      <div className={styles.shape}>
-        <div className={styles.firstRow}>
+      <div ref={shapeRef} className={`${styles.shape} ${shapeVisible ? styles.animateShape : ''}` }>
+        <div ref={imagesRef} className={`${styles.firstRow} ${imagesVisible ? styles.animateImages : ''}` }>
           <div>
               <img src="images/TensorFlowImage.png" alt="TensorFlowLogo" />
           </div>
@@ -12,7 +18,7 @@ const Instruments = () => {
               <img src="images/PythonImage.png" alt="PythonLogo" />
           </div>
         </div>
-        <div className={styles.secondRow}>
+        <div ref={imagesRef} className={`${styles.secondRow} ${imagesVisible ? styles.animateImages : ''}` }>
           <div>
              <img src="images/ReactImage.png" alt="ReactLogo" />
           </div>
@@ -22,7 +28,7 @@ const Instruments = () => {
         </div>
 
       </div>
-      <div className={styles.Title}>
+      <div ref={titleRef} className={`${styles.Title} ${titleVisible ? styles.animateTitle : ''}` }>
         <h1> Software used on this project</h1>
       </div>
     </div>

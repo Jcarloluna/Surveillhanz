@@ -1,8 +1,11 @@
 import styles from "/styles/AboutUs/AboutUsText.module.css";
+import {useInView} from 'react-intersection-observer';
 
 const AboutUsText = () => {
+  const { ref: containerRef, inView: containerVisible} = useInView();
+
   return (
-    <div className={styles.container}>
+    <div ref={containerRef} className={`${styles.container} ${containerVisible ? styles.animateContainer : ''}` }>
       <div className={styles.containerTitle}>
         <h1>About Us</h1>
       </div>

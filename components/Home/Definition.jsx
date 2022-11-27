@@ -1,9 +1,13 @@
 import styles from "/styles/Home/Definition.module.css";
+import {useInView} from 'react-intersection-observer';
 
 const Definition = () => {
+  const { ref: shapeRef, inView: shapeVisible} = useInView();
+  console.log('is shape visible?:',shapeVisible)
+
   return (
     <div className={styles.container}>
-      <div className={styles.Shape}>
+      <div ref={shapeRef} className={`${styles.Shape} ${shapeVisible ? styles.animateShape : ''}` }>
         <div className={styles.Question}>
             <h1>What is Object Recognition?</h1>
         </div>

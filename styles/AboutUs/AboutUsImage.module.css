@@ -4,13 +4,29 @@
     justify-content: center;
     flex-direction:column;
     align-items: center;
-    height: 500px;
-    background-color: #1c1c1c;
+    height: 700px;
 }
+
+.animateContainer{
+    animation-duration:1s;
+    animation-name: animate-container;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes animate-container {
+    0%{
+      transform: translate3d(500px,0,0); opacity:0.25;
+    }
+   
+    100%{
+      transform:  translate3d(0,0,0); opacity:1;
+    }
+    
+  }
 
 .containerImage>img{
     width: 100%;
-    height: auto;
+    height: 100%;
     border: 5px solid #4a4a4a;
     margin:0px;
 }

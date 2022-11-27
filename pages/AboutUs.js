@@ -3,6 +3,7 @@ import AboutUsText from "../components/AboutUs/AboutUsText";
 import AboutUsLinks from "../components/AboutUs/AboutUsLinks";
 import Footer from "../components/Footer";
 import NavbarAbout from "../components/NavbarAbout";
+import { motion } from 'framer-motion';
 
 
 function AboutUs() {
@@ -10,8 +11,8 @@ function AboutUs() {
     <div>
       <NavbarAbout/>
       <AboutUsText/>
-      <AboutUsImage/>
       <AboutUsLinks/>
+      <AboutUsImage/>
       <Footer/>
     </div>
   );

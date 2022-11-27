@@ -1,8 +1,26 @@
 .container {
-  height: 623px;
+  height: 750px;
   display: flex;
   background-image: url("/images/BackgroundImage.png");
   justify-content:space-evenly;
+  opacity:0;
+}
+
+.animateContainer{
+  animation-duration:1s;
+  animation-name: animate-container;
+  animation-fill-mode: forwards;
+}
+
+@keyframes animate-container {
+  0%{
+    transform: translate3d(500px,0,0); opacity:0.25;
+  }
+ 
+  100%{
+    transform:  translate3d(0,0,0); opacity:1;
+  }
+  
 }
 
 .containerText{
