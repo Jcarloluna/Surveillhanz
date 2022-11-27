@@ -85,7 +85,6 @@
   animation-duration:1.5s;
   animation-name: animate-idPicture;
   animation-fill-mode: forwards;
-  animation-delay:0.4s;
 }
 
 @keyframes animate-idPicture {
@@ -101,7 +100,7 @@
   animation-duration:1.5s;
   animation-name: animate-idPicture2;
   animation-fill-mode: forwards;
-  animation-delay:1.25s;
+  animation-delay:.5s;
 }
 
 @keyframes animate-idPicture2 {
@@ -118,7 +117,7 @@
   animation-duration:1.5s;
   animation-name: animate-idPicture3;
   animation-fill-mode: forwards;
-  animation-delay:1.5s;
+  animation-delay:0.7s;
 }
 
 @keyframes animate-idPicture3 {
@@ -135,7 +134,7 @@
   animation-duration:1.5s;
   animation-name: animate-idPicture4;
   animation-fill-mode: forwards;
-  animation-delay:1.75s;
+  animation-delay:0.9s;
 }
 
 @keyframes animate-idPicture4 {
@@ -152,7 +151,7 @@
   animation-duration:1.5s;
   animation-name: animate-idPicture5;
   animation-fill-mode: forwards;
-  animation-delay:2s;
+  animation-delay:1.1s;
 }
 
 @keyframes animate-idPicture5 {
