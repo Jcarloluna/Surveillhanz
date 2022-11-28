@@ -47,6 +47,7 @@
   text-align: center;
 }
 
+
 .animateContactsDiv{
   animation-duration:1s;
   animation-name: animate-contactsDiv;
@@ -85,6 +86,8 @@
   animation-duration:1.5s;
   animation-name: animate-idPicture;
   animation-fill-mode: forwards;
+  overflow: hidden;
+  transition: transform .5s ease;
 }
 
 @keyframes animate-idPicture {
@@ -102,6 +105,7 @@
   animation-fill-mode: forwards;
   animation-delay:.5s;
 }
+
 
 @keyframes animate-idPicture2 {
   0%{
@@ -212,12 +216,12 @@ a:hover .LinkLogoColored{
 }
 
 .fbLink:hover{
-  box-shadow: inset 300px 0 0 0 #295ae1;
+  box-shadow: inset 300px 0 0 0 rgba(41, 90, 224, 0.75);
   transition: 0.4s ease-in;
 }
 
 .gmLink:hover{
-  box-shadow: inset 300px 0 0 0 #e71111;
+  box-shadow: inset 300px 0 0 0 rgb(231, 17, 17, 0.75);
   transition: 0.4s ease-in;
 }
 

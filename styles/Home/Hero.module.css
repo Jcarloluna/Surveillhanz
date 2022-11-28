@@ -38,6 +38,12 @@
   display: flex;
 }
 
+.containerImage>img:hover{
+  transform: scale(1.05);
+  transition:0.5s;
+  filter: drop-shadow(0px 5px 10px #010101bf);
+}
+
 .containerText > h1 {
   font-weight: 700;
   font-size: 65px;

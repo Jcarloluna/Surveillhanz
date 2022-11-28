@@ -1,4 +1,5 @@
 import styles from "/styles/Home/Instruments.module.css";
+import Link from "next/link";
 import {useInView} from 'react-intersection-observer';
 
 const Instruments = () => {
@@ -12,18 +13,18 @@ const Instruments = () => {
       <div ref={shapeRef} className={`${styles.shape} ${shapeVisible ? styles.animateShape : ''}` }>
         <div ref={imagesRef} className={`${styles.firstRow} ${imagesVisible ? styles.animateImages : ''}` }>
           <div>
-              <img src="images/TensorFlowImage.png" alt="TensorFlowLogo" />
+              <Link href="https://www.tensorflow.org" target="_blank"><img src="images/TensorFlowImage.png" alt="TensorFlowLogo" /></Link>
           </div>
           <div>
-              <img src="images/PythonImage.png" alt="PythonLogo" />
+              <Link href="https://www.python.org" target="_blank"><img src="images/PythonImage.png" alt="PythonLogo" /></Link>
           </div>
         </div>
         <div ref={imagesRef} className={`${styles.secondRow} ${imagesVisible ? styles.animateImages : ''}` }>
           <div>
-             <img src="images/ReactImage.png" alt="ReactLogo" />
+            <Link href="https://reactjs.org" target="_blank"><img src="images/ReactImage.png" alt="ReactLogo" /></Link>
           </div>
           <div>
-            <img src="images/NodeJSimage.png" alt="NodeJSLogo" />
+            <Link href="https://nodejs.org/en/" target="_blank"><img src="images/NodeJSimage.png" alt="NodeJSLogo" /></Link>
           </div>
         </div>
 

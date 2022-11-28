@@ -45,12 +45,24 @@
   opacity:0;
 }
 
+.firstRow img:hover{
+  transform: scale(1.2);
+  transition:0.3s;
+  cursor: pointer;
+}
+
 .secondRow{
   display:flex;
   justify-content: center;
   align-items: center;
   gap:45px;
   opacity: 0;
+}
+
+.secondRow img:hover{
+  transform: scale(1.2);
+  transition:0.3s;
+  cursor: pointer;
 }
 
 .animateImages{
