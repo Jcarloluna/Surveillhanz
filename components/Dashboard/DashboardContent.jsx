@@ -131,7 +131,7 @@ const DashboardContent = () => {
             <h1>Captured Photo</h1>
           </div>
           <div className={styles.body}>
-            <img src="images/sample2.jpeg" alt="sample photo" />
+            <img src="images/sample3.png" alt="sample photo" />
           </div>
           <div className={styles.footer}>
             <button
@@ -193,7 +193,6 @@ const DashboardContent = () => {
             setValue(s.target.value);
             onChange(s.target.value);
           }}
-          placeholder={`${count} records...`}
         />
       </span>
     )

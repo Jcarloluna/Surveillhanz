@@ -15,7 +15,7 @@ const AboutUsLinks = () => {
       <div ref={contactsDivRef} className={`${styles.ContactsDiv} ${contactsDivVisible ? styles.animateContactsDiv : ''}` }>
         <div className={styles.contacts}>
           <h3>Dominick Hanz Joson</h3>
-          <img ref={idPictureRef} className={`${styles.idPicture} ${idPictureVisible ? styles.animateIdPicture : ''}` } src="/images/domsPic2.jpg" alt="Sample Image Object Recognition" />
+          <img ref={idPictureRef} className={`${styles.idPicture} ${idPictureVisible ? styles.animateIdPicture : ''}` } src="/images/domsPic.jpg" alt="Sample Image Object Recognition" />
           <div className={styles.Links}>
             <Link className={styles.fbLink} target="_blank" href="https://www.facebook.com/dominickhanz.joson.7"><img className={styles.LinkLogo} src="logo/facebookLogo.svg" alt="FacebookLogo" /> <img className={styles.LinkLogoColored} src="logo/facebookLogo.png" alt="FacebookLogo" /><p>Facebook</p></Link>
             <Link className={styles.gmLink} target="_blank" href="https://mail.google.com/mail/u/lee@example.org/?view=cm&to=dominickhanz.joson%40gsfe.tupcavite.edu.ph"><img className={styles.LinkLogo} src="logo/gmailLogo.svg" alt="FacebookLogo" /> <img className={styles.LinkLogoColored} src="logo/gmailLogo.png" alt="GmailLogo" /><p>Gmail</p></Link>
@@ -35,7 +35,7 @@ const AboutUsLinks = () => {
       <div ref={contactsDivRef} className={`${styles.ContactsDiv} ${contactsDivVisible ? styles.animateContactsDiv : ''}` }>
         <div className={styles.contacts}>
           <h3>John Ray Fetalvero</h3>
-          <img ref={idPictureRef3} className={`${styles.idPicture} ${idPictureVisible3 ? styles.animateIdPicture3 : ''}` } src="/images/mamiPic.jpg" alt="Sample Image Object Recognition" />
+          <img ref={idPictureRef3} className={`${styles.idPicture} ${idPictureVisible3 ? styles.animateIdPicture3 : ''}` } src="/images/mamiPic.png" alt="Sample Image Object Recognition" />
           <div className={styles.Links}>
             <Link className={styles.fbLink} target="_blank" href="https://www.facebook.com/fetalvero.jr"><img className={styles.LinkLogo} src="logo/facebookLogo.svg" alt="FacebookLogo" /> <img className={styles.LinkLogoColored} src="logo/facebookLogo.png" alt="FacebookLogo" /><p>Facebook</p></Link>
             <Link className={styles.gmLink} target="_blank" href="https://mail.google.com/mail/u/lee@example.org/?view=cm&to=johnray.fetalvero@gsfe.tupcavite.edu.ph "><img className={styles.LinkLogo} src="logo/gmailLogo.svg" alt="FacebookLogo" /> <img className={styles.LinkLogoColored} src="logo/gmailLogo.png" alt="GmailLogo" /><p>Gmail</p></Link>

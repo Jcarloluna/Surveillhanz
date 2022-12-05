@@ -3,7 +3,6 @@ import NavbarHome from "../components/NavbarHome";
 import Instruments from "../components/Home/Instruments";
 import Definition from "../components/Home/Definition";
 import Footer from "../components/Footer";
-import { motion } from 'framer-motion';
 
 
 function Surveillhanz() {
