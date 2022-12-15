@@ -24,7 +24,7 @@ const Instruments = () => {
             <Link href="https://reactjs.org" target="_blank"><img src="images/ReactImage.png" alt="ReactLogo" /></Link>
           </div>
           <div>
-            <Link href="https://nodejs.org/en/" target="_blank"><img src="images/NodeJSimage.png" alt="NodeJSLogo" /></Link>
+            <Link href="https://nodejs.org/en/" target="_blank"><img src="images/NodeJSImage.png" alt="NodeJSLogo" /></Link>
           </div>
         </div>
 

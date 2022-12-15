@@ -11,7 +11,7 @@ const Hero = () => {
         <h2>Live objects identification</h2>
       </div>
       <div className={styles.containerImage}>
-        <img src="/images/DogCatImage.png" alt="Sample Image Object Recognition" />
+        <img src="/images/DogcatImage.png" alt="Sample Image Object Recognition" />
       </div>
     </div>
   );
