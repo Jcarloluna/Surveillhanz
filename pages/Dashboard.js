@@ -2,10 +2,15 @@ import Footer from "../components/Footer";
 import NavbarDashboard from "../components/NavbarDashboard";
 import DashboardContent from "../components/Dashboard/DashboardContent";
 import { motion } from 'framer-motion';
+import Head from 'next/head';
 
 function Dashboard() {
   return (
     <div>
+      <Head>
+        <title>Dashboard | Surveillhanz</title>
+        <link rel="icon" href="logo/Surveillhanz.ico"/>
+      </Head>
       <NavbarDashboard/>
       <motion.div initial="hidden" animate="visible" variants={{
         hidden:{
