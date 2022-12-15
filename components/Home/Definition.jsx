@@ -13,9 +13,9 @@ const Definition = () => {
         </div>
         <div className={styles.Answer}>
           <p>
-            The term "object recognition" refers to techniques for physically recognizing 
+            The term &quot;object recognition&quot; refers to techniques for physically recognizing 
             known things using optical, auditory, or other physical means inside an object
-              space. For instance, an object's presence in a digital image or video stream, 
+              space. For instance, an object&apos;s presence in a digital image or video stream, 
               as well as its position and location, are identified.
           </p>
         </div>

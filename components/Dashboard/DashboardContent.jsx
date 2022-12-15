@@ -215,9 +215,9 @@ const DashboardContent = () => {
     <table {...getTableProps()} className={styles.Table}>
       <thead>
         {headerGroups.map((headerGroup,) => (
-          <tr {...headerGroup.getHeaderGroupProps}>
+          <tr key={...headerGroup.getHeaderGroupProps}>
             {headerGroup.headers.map((column)=>(
-              <th {...column.getHeaderProps(column.getSortByToggleProps())}>
+              <th key={...column.getHeaderProps(column.getSortByToggleProps())}>
                 {column.render("Header")}
                 <span>
                         {column.isSorted
@@ -235,12 +235,12 @@ const DashboardContent = () => {
         {page.map((row, i) => {
           prepareRow(row);
           return (
-            <tr {...row.getRowProps()}>
+            <tr key={...row.getRowProps()}>
           {// Loop over the rows cells
           row.cells.map(cell => {
             // Apply the cell props
             return (
-              <td {...cell.getCellProps()}>
+              <td key={...cell.getCellProps()}>
                 {// Render the cell contents
                 cell.render('Cell')}
               </td>
