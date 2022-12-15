@@ -8,7 +8,7 @@ function Dashboard() {
   return (
     <div>
       <Head>
-        <title>Dashboard | Surveillhanz</title>
+        <title>Surveillhanz | Dashboard</title>
         <link rel="icon" href="logo/Surveillhanz.ico"/>
       </Head>
       <NavbarDashboard/>

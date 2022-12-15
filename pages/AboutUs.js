@@ -12,7 +12,7 @@ function AboutUs() {
   return (
     <div>
       <Head>
-        <title>About Us | Surveillhanz</title>
+        <title>Surveillhanz | About Us</title>
         <link rel="icon" href="logo/Surveillhanz.ico"/>
         <meta proprety="og:title"content="My page title" key="title"/>
       </Head>

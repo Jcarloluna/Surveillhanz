@@ -9,7 +9,7 @@ function Surveillhanz() {
   return (
     <div>
       <Head>
-        <title>Home | Surveillhanz</title>
+        <title>Surveillhanz</title>
         <link rel="icon" href="logo/Surveillhanz.ico"/>
       </Head>
       <NavbarHome/>
