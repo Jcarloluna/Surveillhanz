@@ -1,6 +1,7 @@
 import Button from "./Button";
 import styles from "../styles/Navbar.module.css";
 import Link from 'next/link';
+import { signOut } from 'next-auth/react';
 
 const NavbarAbout = () => {
   return (
@@ -14,9 +15,10 @@ const NavbarAbout = () => {
         </div>
       </div>
       <div className={styles.navbarActions}>
-        <Button variant="secondary"><Link href="/">Home</Link></Button>
         <Button variant="secondary"><Link href="/Dashboard">Dashboard</Link></Button>
         <Button variant="primary"><Link href="/AboutUs">About Us</Link></Button>
+        <Button variant="secondary"><Link href="/">Settings</Link></Button>
+        <button onClick={() => signOut()}>Sign Out</button>
       </div>
       </div>
   );

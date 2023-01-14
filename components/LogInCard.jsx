@@ -9,8 +9,9 @@ const LogInCard = () => {
 
     const[show, setShow] = useState(false)
 
+    // Google Handler function
     async function handleGoogleSignin(){
-        signIn('google',{callbackUrl: "http://localhost:3000"})
+        signIn('google',{callbackUrl: "http://localhost:3000/Dashboard"})
     }
 
     return (
@@ -52,7 +53,7 @@ const LogInCard = () => {
                             </span>
                         </div>
                         <div className="input-button">
-                            <button type="submit" onClick={handleGoogleSignin} className={styles.formControlButton}>
+                            <button type="submit" className={styles.formControlButton}>
                                 <Link href={'/Dashboard'} className="text-decoration-none text-white">Sign In</Link>
                             </button>
                         </div>
@@ -60,13 +61,13 @@ const LogInCard = () => {
 
                         <p className={styles.or}> or </p>
                         <div className="input-button">
-                            <button type="submit" className={styles.formControlButton}>
+                            <button type="submit" onClick={handleGoogleSignin} className={styles.formControlButton}>
                                 <img src="/images/googleLogo.png" alt="Google Logo" width={20} height={20} /> Sign In With Google 
                             </button>
                         </div>
                         <div className="input-button">
                             <button type="submit" className={styles.formControlButton}>
-                            <img src="/logo/githubLogoWhite.jpg" alt="Google Logo" width={20} height={20} /> Sign In With Github 
+                            <img src="/logo/githubLogoWhite.jpg" alt="Github Logo" width={20} height={20} /> Sign In With Github 
                             </button>
                         </div>
                     </form>

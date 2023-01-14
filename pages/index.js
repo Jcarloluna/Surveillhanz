@@ -4,6 +4,7 @@ import Instruments from "../components/Home/Instruments";
 import Definition from "../components/Home/Definition";
 import Footer from "../components/Footer";
 import Head from 'next/head';
+import { getSession } from "next-auth/react";
 
 function Surveillhanz() {
   return (
@@ -22,3 +23,20 @@ function Surveillhanz() {
 }
 export default Surveillhanz;
 
+// Redirect to Dashboard page when you are already authenticated
+export async function getServerSideProps({req}) {
+  const session = await getSession({req})
+
+  if (!session) {
+    return {
+      props: { session }
+    }
+  }
+
+  return {
+    redirect: {
+      destination: '/Dashboard',
+      permanent: false
+    }
+  }
+}

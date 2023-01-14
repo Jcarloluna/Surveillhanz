@@ -1,6 +1,7 @@
 import Button from "./Button";
 import styles from "../styles/Navbar.module.css";
 import Link from 'next/link';
+import { useSession,signIn,signOut } from 'next-auth/react';
 
 const NavbarDashboard = () => {
   return (
@@ -17,6 +18,7 @@ const NavbarDashboard = () => {
         <Button variant="primary"><Link href="/Dashboard">Dashboard</Link></Button>
         <Button variant="secondary"><Link href="/AboutUs">About Us</Link></Button>
         <Button variant="secondary"><Link href="/">Settings</Link></Button>
+        <button onClick={() => signOut()}>Sign Out</button>
       </div>
       </div>
   );
