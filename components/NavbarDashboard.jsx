@@ -14,9 +14,9 @@ const NavbarDashboard = () => {
         </div>
       </div>
       <div className={styles.navbarActions}>
+        <Button variant="secondary"><Link href="/">Home</Link></Button>
         <Button variant="primary"><Link href="/Dashboard">Dashboard</Link></Button>
         <Button variant="secondary"><Link href="/AboutUs">About Us</Link></Button>
-        <Button variant="secondary"><Link href="/">Settings</Link></Button>
       </div>
       </div>
   );

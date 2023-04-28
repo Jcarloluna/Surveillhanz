@@ -3,19 +3,14 @@ import NavbarDashboard from "../components/NavbarDashboard";
 import DashboardContent from "../components/Dashboard/DashboardContent";
 import { motion } from 'framer-motion';
 import Head from 'next/head';
-import { useSession } from "next-auth/react";
 
 function Dashboard() {
-
-  const {data:session} = useSession
-
   return (
     <div>
       <Head>
         <title>Surveillhanz | Dashboard</title>
         <link rel="icon" href="logo/Surveillhanz.ico"/>
       </Head>
-      {session ? User():Guest()}
       <NavbarDashboard/>
       <motion.div initial="hidden" animate="visible" variants={{
         hidden:{
